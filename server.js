@@ -18,9 +18,6 @@ var routes = require("./controller/burgers_controller.js");
 
 app.use(routes);
 
-var orm = require("./config/orm.js");
-orm.selectAll();
-
 app.listen(PORT, function() {
     console.log("App listening at localhost:" + PORT);
 });
