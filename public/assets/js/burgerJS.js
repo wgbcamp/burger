@@ -14,5 +14,13 @@ $("#add").click(function(event){
     );
 });
 
+// $("#devour").click(function(event){
+//     event.preventDefault();
+//     $.ajax("/api/burgers", {
+//         type: "PUT",
+//         data: 
+//     })
+// })
+
 
 
