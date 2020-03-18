@@ -2,7 +2,7 @@
 
 Application allows users to name burgers, add burgers to a database and then consume them. When a burger is consume, it is added to the "devoured" category.
 
-![Burger!](/public/assets/application.png)
+![Burger!](/public/assets/img/application.png)
 
 
 
