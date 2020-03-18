@@ -22,4 +22,4 @@ app.listen(PORT, function() {
     console.log("App listening at localhost:" + PORT);
 });
 
-console.log(process.env.SECRET_MESSAGE);
+// console.log(process.env.SECRET_MESSAGE);

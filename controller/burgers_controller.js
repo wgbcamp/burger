@@ -9,11 +9,17 @@ var burger = require("../models/burger.js");
 router.get("/", function(req, res){
     
     burger.all(function(data) {
+        var burgerArray = [];
+        var parsed = JSON.parse(JSON.stringify(data));
+        for (i=0; i<parsed.length; i++){
+            burgerArray.push(parsed[i].burger_name);
+        }
         
         var hbsObject = {
-            burgers: data
+            burgers: burgerArray
           };
-          res.render("index", hbsObject);    
+          res.render("index", hbsObject);  
+          console.log(burgerArray);  
     });
 });
 
