@@ -54,7 +54,6 @@
         if (err) {
           throw err;
         }
-        cb(result);
       });
     }
   };
@@ -62,27 +61,3 @@
  
  module.exports = orm;
 
-//  var orm = {
-    //  selectAll: function(cb){
-    
-    //     var sql = "SELECT burgers.id, burger_name, devoured FROM burgers;";
-    
-    //     connection.query(sql, function(err, result) {
-    
-    //         if (err) {
-    //             throw err;
-    //         }
-    //         console.log(result);
-    //         cb(result);
-    //     });
-    //  },
-    
-    //  insertOne: function(){
-    
-    // },
-    
-    // updateOne: function(){
-    
-    // }
-    
-    // }

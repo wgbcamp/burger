@@ -14,13 +14,24 @@ $("#add").click(function(event){
     );
 });
 
-// $("#devour").click(function(event){
-//     event.preventDefault();
-//     $.ajax("/api/burgers", {
-//         type: "PUT",
-//         data: 
-//     })
-// })
 
 
+$(".devour").click(function(event){
+    event.preventDefault();
+    var id = $(this).data("id");
+    var newDevoured = $(this).data("devoured");  
+    location.reload();
+    
+    console.log("id is" + id);
+    console.log("devoured" + newDevoured);
 
+    $.ajax("/api/burgers" + id, {
+        type: "PUT",
+        data: newDevoured
+    }).then(
+        function(data){
+            
+        }
+    );
+
+ });

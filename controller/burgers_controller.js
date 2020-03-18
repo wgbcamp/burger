@@ -9,17 +9,26 @@ var burger = require("../models/burger.js");
 router.get("/", function(req, res){
     
     burger.all(function(data) {
-        var burgerArray = [];
+        var uneatenBurgers = [];
+        var devouredBurgers = [];
         var parsed = JSON.parse(JSON.stringify(data));
         for (i=0; i<parsed.length; i++){
-            burgerArray.push(parsed[i]);
+            if(parsed[i].devoured == 0){
+            uneatenBurgers.push(parsed[i]);
+            }else{
+                devouredBurgers.push(parsed[i]);
+            }
         }
         
         var hbsObject = {
-            burgers: burgerArray
+            burgers: uneatenBurgers,
+            burgers2: devouredBurgers
           };
-          res.render("index", hbsObject);  
-          console.log(burgerArray);  
+
+          res.render("index", hbsObject); 
+          
+
+
     });
 });
 

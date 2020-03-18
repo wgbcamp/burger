@@ -11,25 +11,36 @@
 
 
 
-
+<div class="columns">
+  <div class="column">
 <ul id="burglist" class="has-background-white">
   {{#each burgers}}
     <tr>
-      <li>{{id}}) {{burger_name}}
+      <li>{{id}}) {{burger_name}} <button data-id="{{id}}" data-devoured="{{devoured}}" class='devour'>EAT ME</button>
       </li>
     </tr>
   {{/each}}
 </ul>
+</div>
+<div class="column">
+<ul id="burglist" class="has-background-white">
+  {{#each burgers2}}
+    <tr>
+      <li>You consumed... ({{id}}) {{burger_name}}. 
+      </li>
+    </tr>
+  {{/each}}
+</ul>
+</div>
+</div>
+
+
 <br>
 <br>
 <form>
-
   <div>
     <label for="nd">Enter the name of your new burger here:</label>
     <input id="help" type="text" name="name">
   </div>
-
-
   <button class="button" id="add" type="submit">Add Burger</button>
-
 </form>

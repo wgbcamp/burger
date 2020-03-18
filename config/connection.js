@@ -10,6 +10,7 @@ var connection = mysql.createConnection({
   database: "e1zibpblc0zeqfw9"
 })
 
+//local connection
 // var connection = mysql.createConnection({
 //   host: "localhost",
 //   port: 3306,
