@@ -2,8 +2,8 @@
 
 Application allows users to name burgers, add burgers to a database and then consume them. When a burger is consume, it is added to the "devoured" category.
 
-![GitHub Logo](/public/assets/img/burger.png)
-Format: ![Alt Text](url)
+![Burger!](/public/assets/application.png)
+
 
 
 Mapper pushes and pulls data 
