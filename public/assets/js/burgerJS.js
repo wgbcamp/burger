@@ -9,7 +9,7 @@ $("#add").click(function(event){
     }).then(
         function(data){
             console.log(AddBurger);
-            // location.reload();
+             location.reload();
         }
     );
 });

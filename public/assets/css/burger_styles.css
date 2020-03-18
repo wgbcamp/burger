@@ -1,5 +1,16 @@
 html {background-color: coral};
 
-#listbg{
+#titlebg{
+    border-radius: 10px;
+}
+
+#burglist{
     background-color: white;
+    width: 30%;
+    opacity: 95%;
+    border-radius: 10px;
+}
+
+#burgerimage{
+    border-radius: 10px;
 }

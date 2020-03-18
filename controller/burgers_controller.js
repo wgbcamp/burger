@@ -12,7 +12,7 @@ router.get("/", function(req, res){
         var burgerArray = [];
         var parsed = JSON.parse(JSON.stringify(data));
         for (i=0; i<parsed.length; i++){
-            burgerArray.push(parsed[i].burger_name);
+            burgerArray.push(parsed[i]);
         }
         
         var hbsObject = {
