@@ -32,6 +32,12 @@ Start the application by running:
 node server.js
 ```
 
+Navigate to port 3000 on your browser:
+
+```
+localhost:3000
+````
+
 ## Technologies
 
 * MySQL
